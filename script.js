@@ -266,10 +266,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeIcon = document.getElementById('themeIcon');
   const htmlRoot = document.documentElement;
 
-  // Determine initial theme: localStorage -> system preference -> light
+  // Determine initial theme: localStorage -> default to dark (Cyber Sapphire & Cyan)
   const savedTheme = localStorage.getItem('portfolio-theme');
-  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+  const initialTheme = savedTheme || 'dark';
 
   function applyTheme(theme) {
     htmlRoot.setAttribute('data-theme', theme);
@@ -565,6 +564,36 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       formAlert.style.display = 'none';
     }, 9000);
+  }
+
+  // ==========================================================================
+  // 9. INTERACTIVE FLUID NEON MOUSE SPOTLIGHT
+  // ==========================================================================
+  if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    const spotlight = document.createElement('div');
+    spotlight.className = 'mouse-spotlight';
+    document.body.appendChild(spotlight);
+
+    let mouseX = -1000, mouseY = -1000;
+    let spotX = -1000, spotY = -1000;
+
+    window.addEventListener('pointermove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    }, { passive: true });
+
+    document.addEventListener('mouseleave', () => {
+      mouseX = -1000;
+      mouseY = -1000;
+    });
+
+    function renderSpotlight() {
+      spotX += (mouseX - spotX) * 0.16;
+      spotY += (mouseY - spotY) * 0.16;
+      spotlight.style.transform = `translate3d(${spotX - 250}px, ${spotY - 250}px, 0)`;
+      requestAnimationFrame(renderSpotlight);
+    }
+    requestAnimationFrame(renderSpotlight);
   }
 
 });
