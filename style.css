@@ -1990,7 +1990,8 @@ html[data-theme="dark"] .back-to-top {
   transform: scale(0.92);
 }
 
-.reveal.active {
+.reveal.active,
+#hero .reveal {
   opacity: 1;
   transform: translate(0) scale(1);
 }

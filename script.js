@@ -371,15 +371,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const header = document.getElementById('header');
   const navLinks = document.querySelectorAll('.nav-link');
   const sections = document.querySelectorAll('section[id]');
+  const backToTopBtn = document.getElementById('backToTop');
 
   function handleScroll() {
     const scrollY = window.scrollY;
 
     // Sticky header shadow
-    if (scrollY > 50) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
+    if (header) {
+      if (scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
     }
 
     // Scroll Spy: highlight active menu item
@@ -401,10 +404,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Back to top visibility
-    if (scrollY > 400) {
-      backToTopBtn.classList.add('visible');
-    } else {
-      backToTopBtn.classList.remove('visible');
+    if (backToTopBtn) {
+      if (scrollY > 400) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
     }
   }
 
@@ -464,6 +469,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================================================
   const revealElements = document.querySelectorAll('.reveal');
 
+  // Immediately activate hero elements so above-the-fold content is always visible
+  document.querySelectorAll('#hero .reveal').forEach((el) => {
+    el.classList.add('active');
+  });
+
   if ('IntersectionObserver' in window) {
     const revealObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -476,12 +486,16 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       {
         root: null,
-        threshold: 0.12,
-        rootMargin: '0px 0px -40px 0px'
+        threshold: 0.1,
+        rootMargin: '0px 0px 40px 0px'
       }
     );
 
-    revealElements.forEach((el) => revealObserver.observe(el));
+    revealElements.forEach((el) => {
+      if (!el.classList.contains('active')) {
+        revealObserver.observe(el);
+      }
+    });
   } else {
     // Fallback for older browsers
     revealElements.forEach((el) => el.classList.add('active'));
@@ -490,14 +504,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================================================
   // 7. BACK TO TOP BUTTON
   // ==========================================================================
-  const backToTopBtn = document.getElementById('backToTop');
-
-  backToTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+  if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     });
-  });
+  }
 
   // ==========================================================================
   // 8. CONTACT FORM HANDLER
