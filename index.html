@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO Primary Meta Tags -->
+  <title id="pageTitle">Nguyễn Hồng Phương | Chuyên viên Hỗ trợ Hệ thống (System Support Specialist)</title>
+  <meta name="title" content="Nguyễn Hồng Phương | Chuyên viên Hỗ trợ Hệ thống (System Support Specialist)">
+  <meta name="description" content="Portfolio của Nguyễn Hồng Phương - Chuyên viên Hỗ trợ Hệ thống (DMS, SAP, TMS, WMS), quản trị CSDL MySQL, Java Spring Boot & Angular. Tối ưu tính ổn định, bảo mật và hiệu quả vận hành.">
+  <meta name="keywords" content="Nguyễn Hồng Phương, Chuyên viên hỗ trợ hệ thống, System Support Specialist, DMS, SAP, TMS, WMS, IT Support, FPT Polytechnic, Portfolio, Vĩnh Long">
+  <meta name="author" content="Nguyễn Hồng Phương">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://phuongpiper.github.io/">
+  <meta property="og:title" content="Nguyễn Hồng Phương | Chuyên viên Hỗ trợ Hệ thống">
+  <meta property="og:description" content="Chuyên viên hỗ trợ hệ thống với tư duy ưu tiên tính ổn định, bảo mật và hiệu quả vận hành (DMS, SAP, TMS, WMS).">
+  <meta property="og:image" content="avatar.jpg">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nguyễn Hồng Phương | System Support Specialist">
+  <meta name="twitter:description" content="Chuyên môn vận hành & duy trì sự ổn định, an toàn cho hệ thống doanh nghiệp (DMS, SAP, TMS, WMS).">
+  <meta name="twitter:image" content="avatar.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%23243447'/><text x='50%' y='55%' font-family='Arial, sans-serif' font-weight='bold' font-size='42' fill='%23ffffff' text-anchor='middle' dominant-baseline='middle'>HP</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 CDN for modern icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================== -->
+  <!-- 1. STICKY NAVBAR -->
+  <!-- ============================================== -->
+  <header id="header" class="site-header">
+    <div class="container header-container">
+      <!-- Logo / Brand -->
+      <a href="#hero" class="brand" aria-label="Trang chủ">
+        <span class="brand-badge">HP</span>
+        <span class="brand-name">Hồng Phương<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav id="navMenu" class="nav-menu" aria-label="Menu chính">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#about" class="nav-link" data-i18n="nav_about">Giới thiệu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link" data-i18n="nav_skills">Kỹ năng</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link" data-i18n="nav_experience">Kinh nghiệm</a>
+          </li>
+          <li class="nav-item">
+            <a href="#education" class="nav-link" data-i18n="nav_education">Học vấn</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link" data-i18n="nav_projects">Dự án</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" data-i18n="nav_contact">Liên hệ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Utility Actions: Language + Theme + Mobile Toggle -->
+      <div class="header-actions">
+        <!-- Language Switcher -->
+        <button id="langToggle" class="btn-action" aria-label="Chuyển đổi ngôn ngữ" title="Chuyển đổi ngôn ngữ (VI / EN)">
+          <span class="lang-flag" id="langFlag">🇻🇳</span>
+          <span class="lang-text" id="langText">VI</span>
+        </button>
+
+        <!-- Dark Mode Toggle -->
+        <button id="themeToggle" class="btn-action" aria-label="Chuyển chế độ sáng/tối" title="Chế độ Sáng / Tối">
+          <i class="fa-solid fa-moon theme-icon" id="themeIcon"></i>
+        </button>
+
+        <!-- Hamburger Button for Mobile -->
+        <button id="navToggle" class="nav-toggle" aria-label="Mở menu chuyển hướng" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main id="main">
+
+    <!-- ============================================== -->
+    <!-- 2. HERO SECTION -->
+    <!-- ============================================== -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        
+        <!-- Hero Visual (Circular Avatar with Navy Border & Status) -->
+        <div class="hero-visual reveal reveal-scale">
+          <div class="avatar-wrapper">
+            <div class="avatar-glow"></div>
+            <img src="avatar.jpg" alt="Nguyễn Hồng Phương - Chuyên viên hỗ trợ hệ thống" class="hero-avatar" id="heroAvatar" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80';">
+            <!-- Pulsing Status Badge -->
+            <div class="status-badge" title="Sẵn sàng tiếp nhận công việc">
+              <span class="pulse-dot"></span>
+              <span class="status-text" data-i18n="hero_status">Sẵn sàng nhận cơ hội mới</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-content reveal reveal-up">
+          <div class="hero-greeting">
+            <span class="greeting-pill">
+              <i class="fa-solid fa-sparkles"></i>
+              <span data-i18n="hero_greeting">Xin chào, tôi là</span>
+            </span>
+          </div>
+
+          <h1 class="hero-title">Nguyễn Hồng Phương</h1>
+
+          <!-- Professional Titles -->
+          <div class="hero-role-box">
+            <span class="role-badge primary" data-i18n="hero_role_vi">Chuyên viên Hỗ trợ Hệ thống</span>
+            <span class="role-separator">/</span>
+            <span class="role-badge secondary" data-i18n="hero_role_en">System Support Specialist</span>
+          </div>
+
+          <!-- Short intro -->
+          <p class="hero-desc" data-i18n="hero_desc">
+            Chuyên gia hỗ trợ & vận hành hạ tầng doanh nghiệp với tư duy ưu tiên tính <strong>ổn định, bảo mật</strong> và <strong>hiệu quả vận hành</strong>. Quản trị toàn diện hệ thống DMS, SAP, TMS, WMS và cơ sở dữ liệu.
+          </p>
+
+          <!-- Quick Info Bar -->
+          <div class="hero-quick-info">
+            <div class="info-pill">
+              <i class="fa-solid fa-location-dot"></i>
+              <span data-i18n="info_location">Vĩnh Long, Việt Nam</span>
+            </div>
+            <div class="info-pill">
+              <i class="fa-solid fa-phone"></i>
+              <span>0788 726 707</span>
+            </div>
+            <div class="info-pill">
+              <i class="fa-solid fa-envelope"></i>
+              <span>nguyenhongphuong.vn1@gmail.com</span>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span data-i18n="btn_contact">Liên hệ ngay</span>
+            </a>
+            <a href="https://github.com/Phuongpiper" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <i class="fa-brands fa-github"></i>
+              <span data-i18n="btn_github">Xem GitHub</span>
+            </a>
+            <a href="cv.pdf" download="CV_NguyenHongPhuong.pdf" class="btn btn-navy">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span data-i18n="btn_cv">Tải CV (PDF)</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-down-hint" aria-label="Cuộn xuống để xem giới thiệu">
+        <span class="mouse-icon">
+          <span class="wheel"></span>
+        </span>
+      </a>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 3. GIỚI THIỆU BẢN THÂN (ABOUT ME) -->
+    <!-- ============================================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag" data-i18n="tag_about">GIỚI THIỆU</span>
+          <h2 class="section-title" data-i18n="title_about">Về Bản Thân Tôi</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Main Statement Card -->
+          <div class="about-statement-card reveal reveal-left">
+            <div class="quote-icon">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <p class="about-text" data-i18n="about_text">
+              "Tôi là chuyên gia hỗ trợ hệ thống với tư duy ưu tiên tính ổn định, bảo mật và hiệu quả vận hành. Với khả năng áp dụng các quy trình chuẩn quốc tế vào việc xử lý các thách thức kỹ thuật, tôi cam kết duy trì sự xuyên suốt và an toàn cho hạ tầng hệ thống của doanh nghiệp. Tôi luôn chủ động học hỏi và cập nhật công nghệ mới để đóng góp vào sự phát triển bền vững của tổ chức."
+            </p>
+            <div class="about-signature">
+              <div class="signature-info">
+                <strong>Nguyễn Hồng Phương</strong>
+                <span data-i18n="signature_role">System Support Specialist</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature Cards / Highlights -->
+          <div class="about-highlights-grid reveal reveal-right">
+            
+            <div class="highlight-card">
+              <div class="card-icon-box">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div class="card-body">
+                <h3 data-i18n="hl1_title">Ổn Định & Bảo Mật</h3>
+                <p data-i18n="hl1_desc">Ưu tiên hàng đầu cho việc bảo vệ dữ liệu, kiểm soát phân quyền và ngăn ngừa rủi ro hệ thống.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card">
+              <div class="card-icon-box">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <div class="card-body">
+                <h3 data-i18n="hl2_title">Quy Trình Quốc Tế</h3>
+                <p data-i18n="hl2_desc">Kinh nghiệm phối hợp với đối tác Accenture, điều phối sự cố chuyên sâu qua hệ thống OTRS.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card">
+              <div class="card-icon-box">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <div class="card-body">
+                <h3 data-i18n="hl3_title">Hệ Thống Đa Nền Tảng</h3>
+                <p data-i18n="hl3_desc">Vận hành đồng bộ các hệ thống cốt lõi: SAP ERP, DMS, Quản lý vận tải TMS & Quản lý kho WMS.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card">
+              <div class="card-icon-box">
+                <i class="fa-solid fa-code-compare"></i>
+              </div>
+              <div class="card-body">
+                <h3 data-i18n="hl4_title">Tư Duy Phát Triển</h3>
+                <p data-i18n="hl4_desc">Nền tảng vững chắc về Lập trình (Java, Angular), CSDL MySQL và thiết kế hệ thống tối ưu.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 4. KỸ NĂNG (SKILLS) -->
+    <!-- ============================================== -->
+    <section id="skills" class="section skills-section alt-bg">
+      <div class="container">
+        
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag" data-i18n="tag_skills">NĂNG LỰC CHUYÊN MÔN</span>
+          <h2 class="section-title" data-i18n="title_skills">Kỹ Năng Kỹ Thuật & Nghiệp Vụ</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle" data-i18n="sub_skills">Sự kết hợp giữa quản trị hệ thống thực chiến, nền tảng phát triển phần mềm và tư duy giải quyết vấn đề.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Group 1: Hệ thống & Quản trị -->
+          <div class="skill-category-card reveal reveal-up" style="--delay: 0.1s">
+            <div class="skill-category-header">
+              <div class="category-icon server-icon">
+                <i class="fa-solid fa-server"></i>
+              </div>
+              <div>
+                <h3 class="category-title" data-i18n="skills_cat1_title">Hệ Thống & Quản Trị</h3>
+                <span class="category-subtitle" data-i18n="skills_cat1_sub">System & Administration</span>
+              </div>
+            </div>
+
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"><i class="fa-brands fa-windows"></i> Windows & Windows Server</span>
+                  <span class="skill-level">Chuyên sâu</span>
+                </div>
+                <p class="skill-desc" data-i18n="sk1_desc">Cài đặt, cấu hình, quản trị người dùng và bảo trì định kỳ hệ điều hành máy chủ.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"><i class="fa-solid fa-cubes"></i> Vận hành SAP, DMS, TMS, WMS</span>
+                  <span class="skill-level">Thành thạo</span>
+                </div>
+                <p class="skill-desc" data-i18n="sk2_desc">Đồng bộ luồng dữ liệu nghiệp vụ, quản lý đơn hàng, kho bãi và chuỗi cung ứng.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"><i class="fa-solid fa-user-shield"></i> Quản lý Người dùng & Phân quyền</span>
+                  <span class="skill-level">Chuẩn bảo mật</span>
+                </div>
+                <p class="skill-desc" data-i18n="sk3_desc">Thiết lập tài khoản, kiểm soát quyền truy cập và bảo mật dữ liệu doanh nghiệp.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"><i class="fa-solid fa-headset"></i> Hỗ trợ Kỹ thuật & Ticket OTRS</span>
+                  <span class="skill-level">Chuyên nghiệp</span>
+                </div>
+                <p class="skill-desc" data-i18n="sk4_desc">Tiếp nhận, phân loại và xử lý sự cố từ xa cho khối Văn phòng (Admin) và Thị trường (Sales).</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"><i class="fa-solid fa-handshake"></i> Phối hợp Devs & Tư vấn giải pháp</span>
+                  <span class="skill-level">Hiệu quả</span>
+                </div>
+                <p class="skill-desc" data-i18n="sk5_desc">Kiểm thử tính năng mới, tái hiện lỗi và tư vấn phương án khắc phục cho khách hàng.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group 2: Phát triển & Cơ sở dữ liệu -->
+          <div class="skill-category-card reveal reveal-up" style="--delay: 0.2s">
+            <div class="skill-category-header">
+              <div class="category-icon dev-icon">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div>
+                <h3 class="category-title" data-i18n="skills_cat2_title">Phát Triển & Cơ Sở Dữ Liệu</h3>
+                <span class="category-subtitle" data-i18n="skills_cat2_sub">Development & Database</span>
+              </div>
+            </div>
+
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"><i class="fa-solid fa-database"></i> Cơ sở dữ liệu MySQL</span>
+                  <span class="skill-level">Quản trị</span>
+                </div>
+                <p class="skill-desc" data-i18n="sk6_desc">Quản lý, vận hành, viết truy vấn tối ưu và lập kế hoạch sao lưu/phục hồi dữ liệu.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"><i class="fa-brands fa-java"></i> Java & Spring Boot</span>
+                  <span class="skill-level">Backend</span>
+                </div>
+                <p class="skill-desc" data-i18n="sk7_desc">Lập trình hướng đối tượng (OOP), xây dựng kiến trúc dịch vụ và xử lý logic backend.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"><i class="fa-brands fa-angular"></i> Angular & AngularJS</span>
+                  <span class="skill-level">Frontend</span>
+                </div>
+                <p class="skill-desc" data-i18n="sk8_desc">Xây dựng giao diện người dùng đơn trang (SPA), quản lý component và reactive state.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"><i class="fa-solid fa-network-wired"></i> RESTful API & JavaScript</span>
+                  <span class="skill-level">Tích hợp</span>
+                </div>
+                <p class="skill-desc" data-i18n="sk9_desc">Thiết kế và tiêu thụ endpoint API an toàn, xử lý dữ liệu JSON bất đồng bộ.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"><i class="fa-brands fa-git-alt"></i> Git & GitHub / OOP Design</span>
+                  <span class="skill-level">Quy chuẩn</span>
+                </div>
+                <p class="skill-desc" data-i18n="sk10_desc">Quản lý phiên bản mã nguồn, phân tích thiết kế hệ thống theo nguyên lý hướng đối tượng.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group 3: Kỹ năng mềm -->
+          <div class="skill-category-card reveal reveal-up" style="--delay: 0.3s">
+            <div class="skill-category-header">
+              <div class="category-icon soft-icon">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div>
+                <h3 class="category-title" data-i18n="skills_cat3_title">Kỹ Năng Mềm & Tư Duy</h3>
+                <span class="category-subtitle" data-i18n="skills_cat3_sub">Soft Skills & Mindset</span>
+              </div>
+            </div>
+
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"><i class="fa-solid fa-magnifying-glass-chart"></i> Giải quyết vấn đề & Tư duy logic</span>
+                  <span class="skill-level">Ưu tú</span>
+                </div>
+                <p class="skill-desc" data-i18n="sk11_desc">Phân tích nguyên nhân gốc rễ (Root Cause Analysis) và đưa ra giải pháp bền vững.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"><i class="fa-solid fa-bolt"></i> Tự nghiên cứu & Cập nhật công nghệ</span>
+                  <span class="skill-level">Chủ động</span>
+                </div>
+                <p class="skill-desc" data-i18n="sk12_desc">Liên tục trau dồi công nghệ mới, thích ứng nhanh với thay đổi nghiệp vụ thực tế.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"><i class="fa-solid fa-people-group"></i> Làm việc nhóm & Quản lý dự án</span>
+                  <span class="skill-level">Hợp tác</span>
+                </div>
+                <p class="skill-desc" data-i18n="sk13_desc">Phối hợp nhịp nhàng giữa các phòng ban, làm việc ăn ý với đối tác quốc tế.</p>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"><i class="fa-solid fa-comments"></i> Giao tiếp & Thấu hiểu người dùng</span>
+                  <span class="skill-level">Tận tâm</span>
+                </div>
+                <p class="skill-desc" data-i18n="sk14_desc">Truyền tải các vấn đề kỹ thuật phức tạp thành ngôn ngữ dễ hiểu cho người dùng cuối.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Badges summary cloud -->
+        <div class="skills-badges-wrap reveal reveal-up">
+          <span class="skill-badge"><i class="fa-solid fa-check"></i> Windows Server</span>
+          <span class="skill-badge"><i class="fa-solid fa-check"></i> DMS Enterprise</span>
+          <span class="skill-badge"><i class="fa-solid fa-check"></i> SAP ERP</span>
+          <span class="skill-badge"><i class="fa-solid fa-check"></i> TMS & WMS</span>
+          <span class="skill-badge"><i class="fa-solid fa-check"></i> OTRS Ticketing</span>
+          <span class="skill-badge"><i class="fa-solid fa-check"></i> MySQL Backup/Restore</span>
+          <span class="skill-badge"><i class="fa-solid fa-check"></i> Java Spring Boot</span>
+          <span class="skill-badge"><i class="fa-solid fa-check"></i> Angular</span>
+          <span class="skill-badge"><i class="fa-solid fa-check"></i> REST API</span>
+          <span class="skill-badge"><i class="fa-solid fa-check"></i> GitHub</span>
+          <span class="skill-badge"><i class="fa-solid fa-check"></i> Accenture Partnering</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 5. KINH NGHIỆM LÀM VIỆC (EXPERIENCE) -->
+    <!-- ============================================== -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag" data-i18n="tag_exp">HÀNH TRÌNH NGHỀ NGHIỆP</span>
+          <h2 class="section-title" data-i18n="title_exp">Kinh Nghiệm Làm Việc</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle" data-i18n="sub_exp">Quá trình công tác thực chiến tại doanh nghiệp giải pháp phần mềm chuyên nghiệp.</p>
+        </div>
+
+        <!-- Vertical Timeline -->
+        <div class="timeline">
+          
+          <!-- Experience Item 1 -->
+          <div class="timeline-item reveal reveal-up">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-badge-row">
+                <span class="timeline-time">
+                  <i class="fa-regular fa-calendar-days"></i> 09/2024 – 06/2026
+                </span>
+                <span class="company-tag">Công ty Giải pháp Phần mềm 5S</span>
+              </div>
+
+              <h3 class="timeline-role" data-i18n="exp1_role">Chuyên viên Hỗ trợ Hệ thống</h3>
+              <h4 class="timeline-company" data-i18n="exp1_company">5S Software Solution Company</h4>
+
+              <ul class="timeline-responsibilities">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span data-i18n="exp1_point1">
+                    Chịu trách nhiệm trực tiếp về <strong>tính ổn định của hệ thống DMS</strong> cho mạng lưới Nhà phân phối toàn quốc; phối hợp với đối tác chiến lược <strong>Accenture</strong> để điều phối và xử lý sự cố (ticket) chuyên sâu qua hệ thống <strong>OTRS</strong>.
+                  </span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span data-i18n="exp1_point2">
+                    Tiếp nhận, xử lý vấn đề của người dùng qua kênh hỗ trợ từ xa; tư vấn khắc phục sự cố kịp thời cho khối văn phòng (Admin, Giám sát) và khối thị trường (Sales), đảm bảo hoạt động kinh doanh diễn ra <strong>liên tục và không gián đoạn</strong>.
+                  </span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span data-i18n="exp1_point3">
+                    Quản lý tài khoản, phân quyền, giám sát tính bảo mật của hệ thống nghiệp vụ; vận hành đồng bộ hệ thống <strong>SAP</strong>, <strong>TMS</strong> (Quản lý vận tải), <strong>WMS</strong> (Quản lý kho hàng).
+                  </span>
+                </li>
+              </ul>
+
+              <div class="tech-tags">
+                <span class="tech-pill">DMS</span>
+                <span class="tech-pill">SAP ERP</span>
+                <span class="tech-pill">TMS</span>
+                <span class="tech-pill">WMS</span>
+                <span class="tech-pill">Accenture</span>
+                <span class="tech-pill">OTRS</span>
+                <span class="tech-pill">Remote Support</span>
+                <span class="tech-pill">Access Security</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Item 2 -->
+          <div class="timeline-item reveal reveal-up">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-badge-row">
+                <span class="timeline-time">
+                  <i class="fa-regular fa-calendar-days"></i> 01/2023 – 06/2023
+                </span>
+                <span class="company-tag">Công ty Giải pháp Phần mềm 5S</span>
+              </div>
+
+              <h3 class="timeline-role" data-i18n="exp2_role">Thực tập sinh IT (IT Intern)</h3>
+              <h4 class="timeline-company" data-i18n="exp2_company">5S Software Solution Company</h4>
+
+              <ul class="timeline-responsibilities">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span data-i18n="exp2_point1">
+                    Tham gia phát triển giao diện người dùng (UI) với <strong>Angular</strong>, thiết kế và kết nối <strong>RESTful API</strong> giữa Front-end và Back-end với Java.
+                  </span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span data-i18n="exp2_point2">
+                    Thực hiện kiểm thử (testing), debug phát hiện lỗi và tối ưu hóa hiệu suất website, đảm bảo trải nghiệm người dùng mượt mà.
+                  </span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span data-i18n="exp2_point3">
+                    Thực hành thiết kế cơ sở dữ liệu với <strong>MySQL</strong>, quản lý mã nguồn chặt chẽ qua <strong>GitHub</strong> theo quy trình nhóm.
+                  </span>
+                </li>
+              </ul>
+
+              <div class="tech-tags">
+                <span class="tech-pill">Angular</span>
+                <span class="tech-pill">Java</span>
+                <span class="tech-pill">RESTful API</span>
+                <span class="tech-pill">MySQL</span>
+                <span class="tech-pill">GitHub</span>
+                <span class="tech-pill">UI Development</span>
+                <span class="tech-pill">Debugging</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 6. HỌC VẤN (EDUCATION) -->
+    <!-- ============================================== -->
+    <section id="education" class="section education-section alt-bg">
+      <div class="container">
+        
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag" data-i18n="tag_edu">NỀN TẢNG HỌC THUẬT</span>
+          <h2 class="section-title" data-i18n="title_edu">Học Vấn & Đào Tạo</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="education-card reveal reveal-up">
+          <div class="edu-logo-box">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+
+          <div class="edu-details">
+            <div class="edu-header-row">
+              <div>
+                <h3 class="edu-school" data-i18n="edu_school">Cao đẳng FPT Polytechnic</h3>
+                <h4 class="edu-major" data-i18n="edu_major">Chuyên ngành: Phát triển phần mềm (Software Development)</h4>
+              </div>
+              <span class="edu-period">
+                <i class="fa-regular fa-calendar-days"></i> 2021 – 2024
+              </span>
+            </div>
+
+            <p class="edu-summary" data-i18n="edu_desc">
+              Được đào tạo bài bản theo phương pháp thực học - thực nghiệp: tư duy lập trình hướng đối tượng (OOP), cấu trúc dữ liệu và giải thuật, phân tích thiết kế hệ thống, cơ sở dữ liệu quan hệ (SQL/MySQL), phát triển ứng dụng Web đa tầng (Java Spring Boot, Angular) và quy trình làm việc chuẩn Agile/Scrum.
+            </p>
+
+            <div class="edu-badges">
+              <span class="edu-badge"><i class="fa-solid fa-award"></i> Tốt nghiệp Chuyên ngành Phát triển Phần mềm</span>
+              <span class="edu-badge"><i class="fa-solid fa-laptop-code"></i> Nền tảng OOP & Clean Code</span>
+              <span class="edu-badge"><i class="fa-solid fa-database"></i> Thiết kế CSDL Chuẩn hóa</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 7. DỰ ÁN (PROJECTS) -->
+    <!-- ============================================== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag" data-i18n="tag_proj">SẢN PHẨM & DỰ ÁN</span>
+          <h2 class="section-title" data-i18n="title_proj">Dự Án Nổi Bật</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle" data-i18n="sub_proj">Các dự án tiêu biểu áp dụng kiến trúc hiện đại và công nghệ tiên tiến.</p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- PROJECT 1: WEBSITE CHAT MESSAGES -->
+          <article class="project-card reveal reveal-up">
+            <div class="project-thumb">
+              <img src="assets/chat-app.jpg" alt="Website Chat Messages Preview" loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80';">
+              <div class="project-overlay">
+                <a href="https://github.com/huynhkhang1234/WEBSITE-CHAT-MESSAGES.git" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Xem mã nguồn trên GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-category" data-i18n="proj1_type">Ứng dụng Web / Full-Stack</div>
+              <h3 class="project-title">Website Chat Messages</h3>
+              <p class="project-desc" data-i18n="proj1_desc">
+                Hệ thống trò chuyện tin nhắn trực tuyến hỗ trợ gửi/nhận tin nhắn thời gian thực, quản trị danh sách người dùng, giao diện trực quan thân thiện và kiến trúc API bảo mật cao.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Angular</span>
+                <span class="tech-tag">Java (Spring Boot)</span>
+                <span class="tech-tag">RESTful API</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/huynhkhang1234/WEBSITE-CHAT-MESSAGES.git" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                  <i class="fa-brands fa-github"></i>
+                  <span data-i18n="btn_view_github">Xem trên GitHub</span>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: HỆ THỐNG VẬN HÀNH DMS TOÀN QUỐC (Case Study / Demo Card) -->
+          <article class="project-card reveal reveal-up" style="--delay: 0.15s">
+            <div class="project-thumb">
+              <div class="system-project-visual">
+                <i class="fa-solid fa-network-wired"></i>
+                <div class="system-project-badge" data-i18n="proj2_badge">Enterprise System Architecture</div>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-category" data-i18n="proj2_type">Hệ Thống Doanh Nghiệp / Enterprise</div>
+              <h3 class="project-title" data-i18n="proj2_title">Quy Trình Vận Hành & Điều Phối DMS - SAP</h3>
+              <p class="project-desc" data-i18n="proj2_desc">
+                Mô hình quy trình giám sát, bảo trì và đồng bộ dữ liệu liên tục giữa hệ thống DMS, SAP ERP, hệ thống quản lý vận tải (TMS) và kho hàng (WMS) cho chuỗi phân phối toàn quốc.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">DMS Enterprise</span>
+                <span class="tech-tag">SAP ERP</span>
+                <span class="tech-tag">OTRS Ticket</span>
+                <span class="tech-tag">TMS / WMS</span>
+              </div>
+
+              <div class="project-links">
+                <a href="#contact" class="btn-project-link secondary-link">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span data-i18n="btn_consult">Trao đổi kinh nghiệm</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ========================================================= -->
+          <!-- KHUNG MẪU ĐỂ BẠN DỄ DÀNG THÊM DỰ ÁN MỚI (BỎ COMMENT KHI DÙNG):
+          <article class="project-card reveal reveal-up">
+            <div class="project-thumb">
+              <img src="assets/ten-anh-du-an.jpg" alt="Tên dự án mới">
+              <div class="project-overlay">
+                <a href="https://github.com/Phuongpiper/ten-repo" target="_blank" class="overlay-btn">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-category">Loại dự án (Web / Mobile / System)</div>
+              <h3 class="project-title">Tên Dự Án Của Bạn</h3>
+              <p class="project-desc">Mô tả ngắn gọn về chức năng, vấn đề giải quyết và kết quả đạt được.</p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Công nghệ 1</span>
+                <span class="tech-tag">Công nghệ 2</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Phuongpiper/..." target="_blank" class="btn-project-link">
+                  <i class="fa-brands fa-github"></i> <span>Xem trên GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+          ========================================================= -->
+
+        </div>
+
+        <!-- Callout to GitHub -->
+        <div class="projects-cta-box reveal reveal-up">
+          <p data-i18n="proj_cta_text">Xem thêm các mã nguồn và dự án khác trên kho lưu trữ của tôi:</p>
+          <a href="https://github.com/Phuongpiper" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <i class="fa-brands fa-github"></i>
+            <span>github.com/Phuongpiper</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 8. LIÊN HỆ (CONTACT) -->
+    <!-- ============================================== -->
+    <section id="contact" class="section contact-section alt-bg">
+      <div class="container">
+        
+        <div class="section-header reveal reveal-up">
+          <span class="section-tag" data-i18n="tag_contact">KẾT NỐI VỚI TÔI</span>
+          <h2 class="section-title" data-i18n="title_contact">Thông Tin Liên Hệ</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle" data-i18n="sub_contact">Sẵn sàng trao đổi về cơ hội việc làm, tư vấn kỹ thuật hoặc hợp tác phát triển hệ thống.</p>
+        </div>
+
+        <div class="contact-layout">
+          
+          <!-- Contact Cards Side -->
+          <div class="contact-info-column reveal reveal-left">
+            <h3 class="contact-column-title" data-i18n="contact_col_title">Thông tin trực tiếp</h3>
+            <p class="contact-column-desc" data-i18n="contact_col_desc">
+              Bạn có thể liên lạc với tôi qua số điện thoại, gửi email hoặc ghé thăm trang GitHub cá nhân. Tôi sẽ phản hồi sớm nhất có thể.
+            </p>
+
+            <div class="contact-card-list">
+              <!-- Phone -->
+              <a href="tel:0788726707" class="contact-item-card">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-item-body">
+                  <span class="contact-item-label" data-i18n="c_phone_label">Số điện thoại / Zalo</span>
+                  <strong class="contact-item-value">0788 726 707</strong>
+                </div>
+                <i class="fa-solid fa-chevron-right contact-arrow"></i>
+              </a>
+
+              <!-- Email -->
+              <a href="mailto:nguyenhongphuong.vn1@gmail.com" class="contact-item-card">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-item-body">
+                  <span class="contact-item-label" data-i18n="c_email_label">Email liên hệ</span>
+                  <strong class="contact-item-value">nguyenhongphuong.vn1@gmail.com</strong>
+                </div>
+                <i class="fa-solid fa-chevron-right contact-arrow"></i>
+              </a>
+
+              <!-- Address -->
+              <div class="contact-item-card static-card">
+                <div class="contact-icon-box">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-item-body">
+                  <span class="contact-item-label" data-i18n="c_addr_label">Địa chỉ</span>
+                  <strong class="contact-item-value" data-i18n="c_addr_val">Thị trấn Tân Quới, huyện Bình Tân, tỉnh Vĩnh Long</strong>
+                </div>
+              </div>
+
+              <!-- GitHub -->
+              <a href="https://github.com/Phuongpiper" target="_blank" rel="noopener noreferrer" class="contact-item-card">
+                <div class="contact-icon-box">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="contact-item-body">
+                  <span class="contact-item-label" data-i18n="c_github_label">Trang GitHub cá nhân</span>
+                  <strong class="contact-item-value">github.com/Phuongpiper</strong>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+              </a>
+            </div>
+
+            <!-- Big CV Download Button in Contact -->
+            <div class="contact-cv-box">
+              <a href="cv.pdf" download="CV_NguyenHongPhuong.pdf" class="btn btn-navy btn-block">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span data-i18n="btn_download_cv_full">Tải Hồ Sơ Năng Lực (CV PDF)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form Side -->
+          <div class="contact-form-column reveal reveal-right">
+            <div class="form-wrapper">
+              <h3 class="form-title" data-i18n="form_title">Gửi Tin Nhắn Cho Tôi</h3>
+              <p class="form-subtitle" data-i18n="form_subtitle">Điền thông tin vào form dưới đây để gửi tin nhắn trực tiếp.</p>
+
+              <form id="contactForm" class="contact-form">
+                <!-- Tên -->
+                <div class="form-group">
+                  <label for="senderName" data-i18n="form_lbl_name">Họ và tên của bạn <span class="req">*</span></label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="senderName" name="name" required placeholder="Ví dụ: Nguyễn Văn A" data-i18n-ph="ph_name">
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label for="senderEmail" data-i18n="form_lbl_email">Email liên hệ <span class="req">*</span></label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="senderEmail" name="email" required placeholder="name@example.com" data-i18n-ph="ph_email">
+                  </div>
+                </div>
+
+                <!-- Tiêu đề -->
+                <div class="form-group">
+                  <label for="msgSubject" data-i18n="form_lbl_subject">Tiêu đề tin nhắn</label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-pen"></i>
+                    <input type="text" id="msgSubject" name="subject" placeholder="Ví dụ: Trao đổi về vị trí tuyển dụng" data-i18n-ph="ph_subject">
+                  </div>
+                </div>
+
+                <!-- Nội dung -->
+                <div class="form-group">
+                  <label for="msgContent" data-i18n="form_lbl_message">Nội dung tin nhắn <span class="req">*</span></label>
+                  <textarea id="msgContent" name="message" rows="5" required placeholder="Nhập nội dung bạn muốn gửi..." data-i18n-ph="ph_message"></textarea>
+                </div>
+
+                <!-- Nút gửi -->
+                <button type="submit" id="btnSubmit" class="btn btn-primary btn-block">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  <span data-i18n="btn_send_msg">Gửi tin nhắn</span>
+                </button>
+
+                <!-- Feedback status alert -->
+                <div id="formAlert" class="form-alert" role="alert" style="display: none;"></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================== -->
+  <!-- 9. FOOTER -->
+  <!-- ============================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <!-- Footer Brand & Bio -->
+      <div class="footer-brand-side">
+        <div class="footer-logo">
+          <span class="brand-badge">HP</span>
+          <span class="footer-name">Nguyễn Hồng Phương</span>
+        </div>
+        <p class="footer-bio" data-i18n="footer_bio">
+          Chuyên viên hỗ trợ hệ thống (System Support Specialist) — Cam kết duy trì tính ổn định, an toàn và tối ưu cho hạ tầng công nghệ doanh nghiệp.
+        </p>
+      </div>
+
+      <!-- Quick Nav Links -->
+      <div class="footer-links-side">
+        <h4 class="footer-heading" data-i18n="footer_links_title">Liên Kết Nhanh</h4>
+        <ul class="footer-nav">
+          <li><a href="#about" data-i18n="nav_about">Giới thiệu</a></li>
+          <li><a href="#skills" data-i18n="nav_skills">Kỹ năng</a></li>
+          <li><a href="#experience" data-i18n="nav_experience">Kinh nghiệm</a></li>
+          <li><a href="#education" data-i18n="nav_education">Học vấn</a></li>
+          <li><a href="#projects" data-i18n="nav_projects">Dự án</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Liên hệ</a></li>
+        </ul>
+      </div>
+
+      <!-- Social & Contact Links -->
+      <div class="footer-social-side">
+        <h4 class="footer-heading" data-i18n="footer_social_title">Kết Nối Trực Tuyến</h4>
+        <div class="social-icons">
+          <a href="https://github.com/Phuongpiper" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:nguyenhongphuong.vn1@gmail.com" class="social-btn" aria-label="Email" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="tel:0788726707" class="social-btn" aria-label="Phone" title="Điện thoại">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+          <a href="cv.pdf" download="CV_NguyenHongPhuong.pdf" class="social-btn" aria-label="Download CV" title="Tải CV">
+            <i class="fa-solid fa-file-pdf"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Copyright Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 <strong class="copy-name">Nguyễn Hồng Phương</strong>. <span data-i18n="footer_copy">Bản quyền đã được bảo lưu. Tối ưu cho GitHub Pages.</span></p>
+        <p class="footer-tagline"><i class="fa-solid fa-shield-heart"></i> <span data-i18n="footer_motto">Ổn Định • Bảo Mật • Hiệu Quả</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Scroll To Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Lên đầu trang" title="Lên đầu trang">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Custom JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
